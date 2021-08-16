@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <body>
+            <script>
+                var languages =["JavaScript","HTML","CSS","Typescript"];
+
+                for (i = 0; i < languages.length; i++) {
+                document.write(i+"."+languages[i] + "<br/>");
+                }
+                //lebih sederhana
+                for (i in languages) {
+                document.write(i+"."+languages[i] + "<br/>");
+                }
+                //contoh hari
+                var days = ["Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu"]
+                days.forEach(function(days){
+                    document.write("<p>" + days + "</p>")
+                });
+                //metode repeat
+                for (let index = 0; index < 100; index++) {
+                    document.write("ulangi kalimat ini".repeat(100));
+                }
+            </script>
+        </body>
+    </head>
+</html>
