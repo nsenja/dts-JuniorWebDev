@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Kirim data dengan AJAX</title>
+    </head>
+    <script>
+        var url = "https://jsonplaceholder.typicode.com/posts";
+        var data = {
+            title: "Tutorial AJAX dengan JQuery",
+            body: "Ini adalah tutorial dengan AJAX",
+            userId: 1
+        };
+        $.post(url, data, function(data, status){
+            //data terkirim, lakukan sesuatu disini
+
+        });
+    </script>
+</html>
